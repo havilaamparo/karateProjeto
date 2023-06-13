@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"barrigaRest\/feature\/alterar_conta[1.1:18]","start":1686635354902,"end":1686635359739,"title":"barrigaRest\/feature\/alterar_conta[1.1:18] 02:49:14.902-02:49:19.739 Alterar uma conta existente"},{"id":2,"group":2,"content":"barrigaRest\/feature\/auth[1:3]","start":1686635354903,"end":1686635357552,"title":"barrigaRest\/feature\/auth[1:3] 02:49:14.903-02:49:17.552 Pegar o token"},{"id":3,"group":3,"content":"barrigaRest\/feature\/buscar_contas[1:7]","start":1686635354902,"end":1686635358112,"title":"barrigaRest\/feature\/buscar_contas[1:7] 02:49:14.902-02:49:18.112 Buscar todas as contas"},{"id":4,"group":4,"content":"barrigaRest\/feature\/buscar_saldo[1:5]","start":1686635354902,"end":1686635358383,"title":"barrigaRest\/feature\/buscar_saldo[1:5] 02:49:14.902-02:49:18.383 Pegar saldo"},{"id":5,"group":5,"content":"barrigaRest\/feature\/cadastrar_transacao[1:10]","start":1686635354903,"end":1686635360042,"title":"barrigaRest\/feature\/cadastrar_transacao[1:10] 02:49:14.903-02:49:20.042 Cadastrar uma transação"},{"id":6,"group":2,"content":"barrigaRest\/feature\/consultar_extrato[1:7]","start":1686635357565,"end":1686635359265,"title":"barrigaRest\/feature\/consultar_extrato[1:7] 02:49:17.565-02:49:19.265 Consultar todos os extratos"},{"id":7,"group":3,"content":"barrigaRest\/feature\/excluir_conta[1:7]","start":1686635358121,"end":1686635360727,"title":"barrigaRest\/feature\/excluir_conta[1:7] 02:49:18.121-02:49:20.727 Delecar uma conta","className":"failed"},{"id":8,"group":4,"content":"barrigaRest\/support\/cadastrar_contas[1:7]","start":1686635358389,"end":1686635359752,"title":"barrigaRest\/support\/cadastrar_contas[1:7] 02:49:18.389-02:49:19.752 Cadastrar uma conta"},{"id":9,"group":2,"content":"barrigaRest\/support\/resetarAplicacao[1:6]","start":1686635359271,"end":1686635360537,"title":"barrigaRest\/support\/resetarAplicacao[1:6] 02:49:19.271-02:49:20.537 Resetar a aplicação"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

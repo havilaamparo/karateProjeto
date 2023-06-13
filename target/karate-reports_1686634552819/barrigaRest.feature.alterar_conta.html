@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"4b8f106e-9702-442a-9775-6b09b79ccc09",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>barrigaRest.feature.alterar_conta</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-13 02:35:27 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:18]"><span>[1.1:18]</span> <span>Alterar uma conta existente</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:19]"><span>[1.2:19]</span> <span>Alterar uma conta existente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">barrigaRest/feature/alterar_conta.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">PUT contas</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">teste</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:18]</span>
+                <span class="scenario-name">Alterar uma conta existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3231</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:18]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = call read(&quot;classpath:barrigaRest/feature/auth.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1450</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.auth</div>
+      </div>
+      <div class="time-cell passed">1408</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.4">02:35:24.284 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {email: &quot;a@a&quot;, senha: &quot;a&quot;, redirecionar: false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">56</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.6">02:35:24.713 request:
+1 &gt; POST https://barrigarest.wcaquino.me/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;a@a&quot;,&quot;senha&quot;:&quot;a&quot;,&quot;redirecionar&quot;:false}
+
+02:35:25.732 response time in milliseconds: 1016
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:26 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 122
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;7a-FnDAQekM3VP4lo/xFY0wSczih8w&quot;
+{&quot;id&quot;:1,&quot;nome&quot;:&quot;a&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.8">02:35:25.744 [print] {
+  &quot;id&quot;: 1,
+  &quot;nome&quot;: &quot;a&quot;,
+  &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:18]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def consultarContas = call read(&quot;classpath:barrigaRest/feature/buscar_contas.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1299</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.buscar_contas</div>
+      </div>
+      <div class="time-cell passed">1283</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = call read(&quot;classpath:barrigaRest/feature/auth.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">798</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="1.5.0.call">
+      <div class="step-container" id="1.5.0.call.0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.auth</div>
+      </div>
+      <div class="time-cell passed">787</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call.0.4.0.call">
+    <div class="step-container" id="1.5.0.call.0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call.0.4.0.call">
+    <div class="step-container" id="1.5.0.call.0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {email: &quot;a@a&quot;, senha: &quot;a&quot;, redirecionar: false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call.0.4.0.call">
+    <div class="step-container" id="1.5.0.call.0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">784</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5.0.call.0.4.0.call.0.6">02:35:25.778 request:
+1 &gt; POST https://barrigarest.wcaquino.me/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;a@a&quot;,&quot;senha&quot;:&quot;a&quot;,&quot;redirecionar&quot;:false}
+
+02:35:26.553 response time in milliseconds: 774
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:27 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 122
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;7a-FnDAQekM3VP4lo/xFY0wSczih8w&quot;
+{&quot;id&quot;:1,&quot;nome&quot;:&quot;a&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call.0.4.0.call">
+    <div class="step-container" id="1.5.0.call.0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call.0.4.0.call">
+    <div class="step-container" id="1.5.0.call.0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5.0.call.0.4.0.call.0.8">02:35:26.559 [print] {
+  &quot;id&quot;: 1,
+  &quot;nome&quot;: &quot;a&quot;,
+  &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/contas&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;JWT &#39;+ auth.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">480</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5.0.call.0.9">02:35:26.564 request:
+1 &gt; GET https://barrigarest.wcaquino.me/contas
+1 &gt; Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+02:35:27.041 response time in milliseconds: 477
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:28 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 445
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;1bd-Z1wo2yrF2G5VvhcMLeC4o/6R/X0&quot;
+[{&quot;id&quot;:1778279,&quot;nome&quot;:&quot;Conta para alterar&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778280,&quot;nome&quot;:&quot;Conta mesmo nome&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778281,&quot;nome&quot;:&quot;Conta para movimentacoes&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778282,&quot;nome&quot;:&quot;Conta com movimentacao&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778283,&quot;nome&quot;:&quot;Conta para saldo&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778284,&quot;nome&quot;:&quot;Conta para extrato&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1}]
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.5.0.call">
+    <div class="step-container" id="1.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5.0.call.0.11">02:35:27.045 [print] [
+  {
+    &quot;id&quot;: 1778279,
+    &quot;nome&quot;: &quot;Conta para alterar&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778280,
+    &quot;nome&quot;: &quot;Conta mesmo nome&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778281,
+    &quot;nome&quot;: &quot;Conta para movimentacoes&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778282,
+    &quot;nome&quot;: &quot;Conta com movimentacao&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778283,
+    &quot;nome&quot;: &quot;Conta para saldo&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778284,
+    &quot;nome&quot;: &quot;Conta para extrato&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/contas/&#39;+ consultarContas.response[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {nome: &quot;tessste&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;JWT &#39;+ auth.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">473</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">02:35:27.056 request:
+1 &gt; PUT https://barrigarest.wcaquino.me/contas/1778279
+1 &gt; Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 18
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nome&quot;:&quot;tessste&quot;}
+
+02:35:27.524 response time in milliseconds: 467
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:28 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 61
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;3d-7nEU+Z8MooqjXW5sZcnlYbiZmaY&quot;
+{&quot;id&quot;:1778279,&quot;nome&quot;:&quot;tessste&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">02:35:27.528 [print] {
+  &quot;id&quot;: 1778279,
+  &quot;nome&quot;: &quot;tessste&quot;,
+  &quot;visivel&quot;: true,
+  &quot;usuario_id&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">teste</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:19]</span>
+                <span class="scenario-name">Alterar uma conta existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3484</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = call read(&quot;classpath:barrigaRest/feature/auth.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1723</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.auth</div>
+      </div>
+      <div class="time-cell passed">1682</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4.0.call.0.4">02:35:24.256 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {email: &quot;a@a&quot;, senha: &quot;a&quot;, redirecionar: false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">56</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1619</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4.0.call.0.6">02:35:24.713 request:
+1 &gt; POST https://barrigarest.wcaquino.me/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;a@a&quot;,&quot;senha&quot;:&quot;a&quot;,&quot;redirecionar&quot;:false}
+
+02:35:26.005 response time in milliseconds: 1291
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:27 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 122
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;7a-FnDAQekM3VP4lo/xFY0wSczih8w&quot;
+{&quot;id&quot;:1,&quot;nome&quot;:&quot;a&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4.0.call.0.8">02:35:26.019 [print] {
+  &quot;id&quot;: 1,
+  &quot;nome&quot;: &quot;a&quot;,
+  &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.2:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def consultarContas = call read(&quot;classpath:barrigaRest/feature/buscar_contas.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1292</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.buscar_contas</div>
+      </div>
+      <div class="time-cell passed">1259</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = call read(&quot;classpath:barrigaRest/feature/auth.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">783</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="2.5.0.call">
+      <div class="step-container" id="2.5.0.call.0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.auth</div>
+      </div>
+      <div class="time-cell passed">757</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call.0.4.0.call">
+    <div class="step-container" id="2.5.0.call.0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call.0.4.0.call">
+    <div class="step-container" id="2.5.0.call.0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {email: &quot;a@a&quot;, senha: &quot;a&quot;, redirecionar: false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call.0.4.0.call">
+    <div class="step-container" id="2.5.0.call.0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">753</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5.0.call.0.4.0.call.0.6">02:35:26.080 request:
+1 &gt; POST https://barrigarest.wcaquino.me/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;a@a&quot;,&quot;senha&quot;:&quot;a&quot;,&quot;redirecionar&quot;:false}
+
+02:35:26.828 response time in milliseconds: 747
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:27 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 122
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;7a-FnDAQekM3VP4lo/xFY0wSczih8w&quot;
+{&quot;id&quot;:1,&quot;nome&quot;:&quot;a&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call.0.4.0.call">
+    <div class="step-container" id="2.5.0.call.0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call.0.4.0.call">
+    <div class="step-container" id="2.5.0.call.0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5.0.call.0.4.0.call.0.8">02:35:26.834 [print] {
+  &quot;id&quot;: 1,
+  &quot;nome&quot;: &quot;a&quot;,
+  &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/contas&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;JWT &#39;+ auth.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">470</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5.0.call.0.9">02:35:26.843 request:
+1 &gt; GET https://barrigarest.wcaquino.me/contas
+1 &gt; Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+02:35:27.309 response time in milliseconds: 465
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:28 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 445
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;1bd-Z1wo2yrF2G5VvhcMLeC4o/6R/X0&quot;
+[{&quot;id&quot;:1778279,&quot;nome&quot;:&quot;Conta para alterar&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778280,&quot;nome&quot;:&quot;Conta mesmo nome&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778281,&quot;nome&quot;:&quot;Conta para movimentacoes&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778282,&quot;nome&quot;:&quot;Conta com movimentacao&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778283,&quot;nome&quot;:&quot;Conta para saldo&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1},{&quot;id&quot;:1778284,&quot;nome&quot;:&quot;Conta para extrato&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1}]
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.5.0.call">
+    <div class="step-container" id="2.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5.0.call.0.11">02:35:27.311 [print] [
+  {
+    &quot;id&quot;: 1778279,
+    &quot;nome&quot;: &quot;Conta para alterar&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778280,
+    &quot;nome&quot;: &quot;Conta mesmo nome&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778281,
+    &quot;nome&quot;: &quot;Conta para movimentacoes&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778282,
+    &quot;nome&quot;: &quot;Conta com movimentacao&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778283,
+    &quot;nome&quot;: &quot;Conta para saldo&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  },
+  {
+    &quot;id&quot;: 1778284,
+    &quot;nome&quot;: &quot;Conta para extrato&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 1
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/contas/&#39;+ consultarContas.response[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {nome: &quot;tessste&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;JWT &#39;+ auth.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">465</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.12">02:35:27.317 request:
+1 &gt; PUT https://barrigarest.wcaquino.me/contas/1778279
+1 &gt; Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 18
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nome&quot;:&quot;tessste&quot;}
+
+02:35:27.778 response time in milliseconds: 460
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:35:28 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 61
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;3d-7nEU+Z8MooqjXW5sZcnlYbiZmaY&quot;
+{&quot;id&quot;:1778279,&quot;nome&quot;:&quot;tessste&quot;,&quot;visivel&quot;:true,&quot;usuario_id&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">02:35:27.782 [print] {
+  &quot;id&quot;: 1778279,
+  &quot;nome&quot;: &quot;tessste&quot;,
+  &quot;visivel&quot;: true,
+  &quot;usuario_id&quot;: 1
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

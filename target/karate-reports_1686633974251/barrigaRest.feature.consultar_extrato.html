@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"4b8f106e-9702-442a-9775-6b09b79ccc09",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>barrigaRest.feature.consultar_extrato</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-13 02:25:13 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Consultar todos os extratos</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">barrigaRest/feature/consultar_extrato.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">GET extrato</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">teste</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Consultar todos os extratos</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1353</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth = call read(&quot;classpath:barrigaRest/feature/auth.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">852</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">barrigaRest.feature.auth</div>
+      </div>
+      <div class="time-cell passed">841</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">02:25:09.567 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {email: &quot;a@a&quot;, senha: &quot;a&quot;, redirecionar: false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">836</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.6">02:25:09.586 request:
+1 &gt; POST https://barrigarest.wcaquino.me/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;a@a&quot;,&quot;senha&quot;:&quot;a&quot;,&quot;redirecionar&quot;:false}
+
+02:25:10.418 response time in milliseconds: 831
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:25:11 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 122
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;7a-FnDAQekM3VP4lo/xFY0wSczih8w&quot;
+{&quot;id&quot;:1,&quot;nome&quot;:&quot;a&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">02:25:10.422 [print] {
+  &quot;id&quot;: 1,
+  &quot;nome&quot;: &quot;a&quot;,
+  &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://barrigarest.wcaquino.me/extrato/202306&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;JWT &#39; + auth.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">494</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">02:25:10.432 request:
+1 &gt; GET https://barrigarest.wcaquino.me/extrato/202306
+1 &gt; Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0._8dEoo99USVc5NdBo3wMyWfmjX2lwaVhJs9YbNn_WWM
+1 &gt; Host: barrigarest.wcaquino.me
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+02:25:10.920 response time in milliseconds: 487
+1 &lt; 200
+1 &lt; Server: nginx/1.12.1 (Ubuntu)
+1 &lt; Date: Tue, 13 Jun 2023 05:25:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4051
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;fd3-FDvZ/7aUdE++KHEhLmLei0V0XZk&quot;
+[{&quot;conta&quot;:&quot;Conta para movimentacoes&quot;,&quot;id&quot;:1665865,&quot;descricao&quot;:&quot;Movimentacao para exclusao&quot;,&quot;envolvido&quot;:&quot;AAA&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-1500.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778243,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta com movimentacao&quot;,&quot;id&quot;:1665866,&quot;descricao&quot;:&quot;Movimentacao de conta&quot;,&quot;envolvido&quot;:&quot;BBB&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-1500.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778244,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para saldo&quot;,&quot;id&quot;:1665867,&quot;descricao&quot;:&quot;Movimentacao 1, calculo saldo&quot;,&quot;envolvido&quot;:&quot;CCC&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;REC&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;3500.00&quot;,&quot;status&quot;:false,&quot;conta_id&quot;:1778245,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para saldo&quot;,&quot;id&quot;:1665868,&quot;descricao&quot;:&quot;Movimentacao 2, calculo saldo&quot;,&quot;envolvido&quot;:&quot;DDD&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-1000.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778245,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para saldo&quot;,&quot;id&quot;:1665869,&quot;descricao&quot;:&quot;Movimentacao 3, calculo saldo&quot;,&quot;envolvido&quot;:&quot;EEE&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;REC&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;1534.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778245,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para extrato&quot;,&quot;id&quot;:1665870,&quot;descricao&quot;:&quot;Movimentacao para extrato&quot;,&quot;envolvido&quot;:&quot;FFF&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-220.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778246,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para movimentacoes&quot;,&quot;id&quot;:1665871,&quot;descricao&quot;:&quot;Movimentacao para exclusao&quot;,&quot;envolvido&quot;:&quot;AAA&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-1500.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778249,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta com movimentacao&quot;,&quot;id&quot;:1665872,&quot;descricao&quot;:&quot;Movimentacao de conta&quot;,&quot;envolvido&quot;:&quot;BBB&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-1500.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778250,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para saldo&quot;,&quot;id&quot;:1665873,&quot;descricao&quot;:&quot;Movimentacao 1, calculo saldo&quot;,&quot;envolvido&quot;:&quot;CCC&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;REC&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;3500.00&quot;,&quot;status&quot;:false,&quot;conta_id&quot;:1778251,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para saldo&quot;,&quot;id&quot;:1665874,&quot;descricao&quot;:&quot;Movimentacao 2, calculo saldo&quot;,&quot;envolvido&quot;:&quot;DDD&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-1000.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778251,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para saldo&quot;,&quot;id&quot;:1665875,&quot;descricao&quot;:&quot;Movimentacao 3, calculo saldo&quot;,&quot;envolvido&quot;:&quot;EEE&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;REC&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;1534.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778251,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null},{&quot;conta&quot;:&quot;Conta para extrato&quot;,&quot;id&quot;:1665876,&quot;descricao&quot;:&quot;Movimentacao para extrato&quot;,&quot;envolvido&quot;:&quot;FFF&quot;,&quot;observacao&quot;:null,&quot;tipo&quot;:&quot;DESP&quot;,&quot;data_transacao&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;data_pagamento&quot;:&quot;2023-06-13T03:00:00.000Z&quot;,&quot;valor&quot;:&quot;-220.00&quot;,&quot;status&quot;:true,&quot;conta_id&quot;:1778252,&quot;usuario_id&quot;:1,&quot;transferencia_id&quot;:null,&quot;parcelamento_id&quot;:null}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">02:25:10.924 [print] [
+  {
+    &quot;conta&quot;: &quot;Conta para movimentacoes&quot;,
+    &quot;id&quot;: 1665865,
+    &quot;descricao&quot;: &quot;Movimentacao para exclusao&quot;,
+    &quot;envolvido&quot;: &quot;AAA&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-1500.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778243,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta com movimentacao&quot;,
+    &quot;id&quot;: 1665866,
+    &quot;descricao&quot;: &quot;Movimentacao de conta&quot;,
+    &quot;envolvido&quot;: &quot;BBB&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-1500.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778244,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para saldo&quot;,
+    &quot;id&quot;: 1665867,
+    &quot;descricao&quot;: &quot;Movimentacao 1, calculo saldo&quot;,
+    &quot;envolvido&quot;: &quot;CCC&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;3500.00&quot;,
+    &quot;status&quot;: false,
+    &quot;conta_id&quot;: 1778245,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para saldo&quot;,
+    &quot;id&quot;: 1665868,
+    &quot;descricao&quot;: &quot;Movimentacao 2, calculo saldo&quot;,
+    &quot;envolvido&quot;: &quot;DDD&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-1000.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778245,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para saldo&quot;,
+    &quot;id&quot;: 1665869,
+    &quot;descricao&quot;: &quot;Movimentacao 3, calculo saldo&quot;,
+    &quot;envolvido&quot;: &quot;EEE&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;1534.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778245,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para extrato&quot;,
+    &quot;id&quot;: 1665870,
+    &quot;descricao&quot;: &quot;Movimentacao para extrato&quot;,
+    &quot;envolvido&quot;: &quot;FFF&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-220.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778246,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para movimentacoes&quot;,
+    &quot;id&quot;: 1665871,
+    &quot;descricao&quot;: &quot;Movimentacao para exclusao&quot;,
+    &quot;envolvido&quot;: &quot;AAA&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-1500.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778249,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta com movimentacao&quot;,
+    &quot;id&quot;: 1665872,
+    &quot;descricao&quot;: &quot;Movimentacao de conta&quot;,
+    &quot;envolvido&quot;: &quot;BBB&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-1500.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778250,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para saldo&quot;,
+    &quot;id&quot;: 1665873,
+    &quot;descricao&quot;: &quot;Movimentacao 1, calculo saldo&quot;,
+    &quot;envolvido&quot;: &quot;CCC&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;3500.00&quot;,
+    &quot;status&quot;: false,
+    &quot;conta_id&quot;: 1778251,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para saldo&quot;,
+    &quot;id&quot;: 1665874,
+    &quot;descricao&quot;: &quot;Movimentacao 2, calculo saldo&quot;,
+    &quot;envolvido&quot;: &quot;DDD&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-1000.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778251,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para saldo&quot;,
+    &quot;id&quot;: 1665875,
+    &quot;descricao&quot;: &quot;Movimentacao 3, calculo saldo&quot;,
+    &quot;envolvido&quot;: &quot;EEE&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;1534.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778251,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  },
+  {
+    &quot;conta&quot;: &quot;Conta para extrato&quot;,
+    &quot;id&quot;: 1665876,
+    &quot;descricao&quot;: &quot;Movimentacao para extrato&quot;,
+    &quot;envolvido&quot;: &quot;FFF&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;DESP&quot;,
+    &quot;data_transacao&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-06-13T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;-220.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1778252,
+    &quot;usuario_id&quot;: 1,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
